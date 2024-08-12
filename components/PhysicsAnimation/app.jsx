@@ -267,7 +267,7 @@ const App = () => {
             p.fill(body.render.fillStyle); // Fill color
             p.stroke(body.render.strokeStyle); // Stroke color
             p.strokeWeight(body.render.lineWidth); // Stroke width
-            p.rect(0, 0, text.length * 18 + 40, 60, 40); // Rounded rectangle with radius of 20
+            p.rect(0, 0, text.length * 18 + 40, 40, 20); // Rounded rectangle with radius of 20
             p.noStroke();
             p.fill('#0f0f0f');
             p.textSize(16);
