@@ -1,0 +1,28 @@
+.inner {
+  background-color: black;
+
+  .page {
+    background-color: white;
+    border: solid 1px black;
+
+  }
+
+  .slide {
+    height: 100vh;
+    width: 100%;
+    z-index: 99999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    border: solid 1px black;
+  }
+}
+
+.header {
+  a {
+    width: 200px;
+    border: solid 1px black !important;
+  }
+}
