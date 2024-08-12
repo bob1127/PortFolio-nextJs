@@ -1,72 +1,62 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-export default function Home(){
+export default function Home() {
   return (
-    <section className=" grid place-content-center gap-2 bg-green-400 relative z-[9999999] px-8 py-24 text-black">
-      <FlipLink href="#">Website</FlipLink>
-      <FlipLink href="#">design-Life</FlipLink>
+    <section className='grid place-content-center gap-2 bg-green-400 relative z-[9999999] px-8 py-24 text-black'>
+      <FlipLink href='#'>Website</FlipLink>
+      <FlipLink href='#'>design-Life</FlipLink>
       {/* <FlipLink href="#">Facebook</FlipLink>
       <FlipLink href="#">Instagram</FlipLink> */}
     </section>
   );
-};
+}
 
 const FlipLink = ({ children, href }) => {
   return (
     <motion.a
-      initial="initial"
-      whileHover="hovered"
+      initial='initial'
+      whileHover='hovered'
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
-      style={{
-        lineHeight: 0.75,
-      }}
+      className='relative block overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl'
+      style={{ lineHeight: 0.75 }}
     >
       <div>
-        {children.split("").map((l, i) => (
+        {children.split('').map((l, i) => (
           <motion.span
+            key={`top-${i}`}
             variants={{
-              initial: {
-                y: 0,
-              },
-              hovered: {
-                y: "-100%",
-              },
+              initial: { y: 0 },
+              hovered: { y: '-100%' },
             }}
             transition={{
               duration: DURATION,
-              ease: "easeInOut",
+              ease: 'easeInOut',
               delay: STAGGER * i,
             }}
-            className="inline-block"
-            key={i}
+            className='inline-block'
           >
             {l}
           </motion.span>
         ))}
       </div>
-      <div className="absolute inset-0">
-        {children.split("").map((l, i) => (
+      <div className='absolute inset-0'>
+        {children.split('').map((l, i) => (
           <motion.span
+            key={`bottom-${i}`}
             variants={{
-              initial: {
-                y: "100%",
-              },
-              hovered: {
-                y: 0,
-              },
+              initial: { y: '100%' },
+              hovered: { y: 0 },
             }}
             transition={{
               duration: DURATION,
-              ease: "easeInOut",
+              ease: 'easeInOut',
               delay: STAGGER * i,
             }}
-            className="inline-block"
-            key={i}
+            className='inline-block'
           >
             {l}
           </motion.span>

@@ -8,8 +8,8 @@ import DragCarousel from '../components/DragCarousel/index.jsx';
 import TextHover from '../components/TextHover/index.jsx';
 import SmoothParallaxScroll from '../components/SmoothParallaxScroll/idnex.jsx';
 // import textReveal from '../components/TextReveal/index.jsx';
-import Link from 'next/dist/client/link.js';
-import Slider from '../components/Slider/slider.jsx';
+// import Link from 'next/dist/client/link.js';
+// import Slider from '../components/Slider/slider.jsx';
 import MenuToggle from '../components/MenuToggle/index.jsx';
 import Trackeye from '../components/Trackeye/page.jsx';
 // import BannerCarousel from '../components/BannerCarousel/App.jsx';
@@ -104,7 +104,7 @@ CREACTIVEs</h1>
           <div className='right   h-full flex flex-col  w-1/2'>
             <div className='top flex sm:bg-red-500 md:bg-green-500 justify-center items-center h-1/2  flex-col w-full border-b-2 border-black'>
               <h4 className='text-[22px] text-light'>
-                <span>"</span>數位設計，提升您的業務<span>"</span>
+                <span></span>數位設計，提升您的業務<span></span>
               </h4>
               {/* <Link
                 href='/Video'
@@ -123,7 +123,7 @@ CREACTIVEs</h1>
             </div>
             <div className='bottom flex p-[40px] items-center   h-1/2 justify-start flex-col w-full '>
               <h4 className=' text-[22px] text-light'>
-                <span>"</span>創意驅動，技術為本<span>"</span>
+                <span></span>創意驅動，技術為本<span></span>
               </h4>
               <p className='mt-[20px]  w-2/3'>
                 我們相信創意是設計的核心，技術是實現創意的橋樑。
@@ -163,7 +163,7 @@ Design in Life</h2>
           <div className='right h-full  flex flex-row md:flex-col w-full md:w-1/2'>
             <div className='top flex justify-center items-center h-full md:h-1/2  flex-col w-full border-b-2 border-black'>
               <h4 className='text-[22px] text-light'>
-                <span>"</span>數位設計，提升您的業務<span>"</span>
+                <span></span>數位設計，提升您的業務<span></span>
               </h4>
               <h3 className='text-[38px] text-extrabold mt-[30px]'>
                 104年11月 11 日
@@ -171,7 +171,7 @@ Design in Life</h2>
             </div>
             <div className='bottom md:border-none border border-black bg-green-500 flex p-[40px] items-center  h-1/2 justify-start flex-col w-full '>
               <h4 className='text-[22px] text-light'>
-                <span>"</span>創意驅動，技術為本<span>"</span>
+                <span></span>創意驅動，技術為本<span></span>
               </h4>
               <p className='mt-[20px] w-2/3'>
                 我們相信創意是設計的核心，技術是實現創意的橋樑。
